@@ -38,3 +38,6 @@ dependencies = [
 
 [tool.setuptools.packages.find]
 include = ["gei_core*"]  # Le dice a setuptools qué carpeta empaquetar
+
+[tool.setuptools.package-data]
+"gei_core" = ["py.typed"]
