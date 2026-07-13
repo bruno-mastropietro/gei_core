@@ -1,0 +1,1 @@
+from my_manager import MyManager, DynamicIncludeQuerySet

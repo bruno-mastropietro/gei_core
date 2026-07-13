@@ -48,11 +48,6 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "drf_spectacular",
-    "apps.share",
-    "apps.escuela",
-    "apps.calendario",
-    "apps.division",
-    "apps.persona",
 ]
 
 REST_FRAMEWORK = {
