@@ -1,19 +1,18 @@
 import importlib
 import re
-from typing import Any, Type
+from typing import Any, Type, TYPE_CHECKING
 
 from django.apps import apps
 
-from gei_core.models.my_model import MyModel
+if TYPE_CHECKING:
+    from gei_core.models.my_model import MyModel
 
-
-def load_model(model_name: str, app_label: str) -> Type[MyModel]:
+def load_model(model_name: str, app_label: str) -> Type['MyModel']:
     """
     Carga un modelo de Django dinámicamente para evitar importaciones circulares.
     Uso: load_model('EscuelaModel') o load_model('EscuelaModel', 'otra_app')
     """
     return apps.get_model(app_label, model_name)
-
 
 def _camel_to_snake(name: str) -> str:
     """Convierte de CamelCase a snake_case (ej: SupervisionService -> supervision_service)"""
