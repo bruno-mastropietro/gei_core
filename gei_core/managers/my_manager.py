@@ -1,6 +1,6 @@
 from django.db import models
 
-from core.utils.api_utils import apply_includes_to_queryset
+from gei_core.utils.api_utils import apply_includes_to_queryset
 
 
 class DynamicIncludeQuerySet(models.QuerySet):

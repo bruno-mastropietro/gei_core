@@ -3,7 +3,7 @@ from functools import wraps
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.response import Response
 
-from core.utils.queryset_filters import queryset_filters
+from gei_core.utils.queryset_filters import queryset_filters
 
 
 class LimitPagePagination(PageNumberPagination):

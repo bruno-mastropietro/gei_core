@@ -4,7 +4,7 @@ from django.db.models import QuerySet
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
-from core.utils.api_utils import parse_includes
+from gei_core.utils.api_utils import parse_includes
 
 
 def my_api_view(methods, serializer_class=None):

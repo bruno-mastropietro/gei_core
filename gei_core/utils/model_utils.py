@@ -4,7 +4,7 @@ from typing import Any, Type
 
 from django.apps import apps
 
-from core.models.my_model import MyModel
+from gei_core.models.my_model import MyModel
 
 
 def load_model(model_name: str, app_label: str) -> Type[MyModel]:

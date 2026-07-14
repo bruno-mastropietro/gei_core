@@ -1,6 +1,6 @@
 from django.db import models
 
-from core.managers.my_manager import MyManager
+from gei_core.managers.my_manager import MyManager
 
 
 class MyModel(models.Model):

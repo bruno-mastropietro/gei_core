@@ -1,16 +1,15 @@
 import re
 from types import SimpleNamespace
 
-from django.db.models import CharField, F, Q, Value
+from django.db.models import CharField, F, Value
 from django.db.models.functions import Concat, Replace
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
-from core.decorators.datatable import datatable
-from core.decorators.my_api_view import my_api_view
-from core.utils.debug_helper import lq, lqs2
-from core.utils.queryset_filters import queryset_filters
+from gei_core.decorators.datatable import datatable
+from gei_core.decorators.my_api_view import my_api_view
+from gei_core.utils.queryset_filters import queryset_filters
 
 
 def my_views(service_class, serializer_class, create_serializer, update_serializer, pk_name):
