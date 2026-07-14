@@ -1,1 +1,1 @@
-from my_manager import MyManager, DynamicIncludeQuerySet
+from .my_manager import MyManager, DynamicIncludeQuerySet
